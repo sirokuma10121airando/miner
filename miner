@@ -1,0 +1,27 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const token = 'NjY1NjAyOTUxMDA3NDM2ODA1.Xkt-cw.3DZTqV2rT5NS_3phklYoMuIjq-w';
+
+client.on("message", message=>
+{
+  if (message.channel.id == "678980843838111773")
+  {
+    if (message.content)
+    {
+      if (message.content.match('You ended your mining session!'))
+        message.channel.send('m!m')
+    }
+    let embed = message.embeds[0];
+    if (embed)
+    {
+      if (embed.title)
+      {
+        if (embed.title.match("YOUR PICKAXE IS BROKEN!"))
+          message.channel.send("m!sell all");
+          if (embed.title.match("You Sold"))
+          message.channel.send("m!repair");
+        
+      }
+      
+      
+client.login(token)
