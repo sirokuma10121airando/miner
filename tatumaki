@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = '';
+const token = 'NjgxNTA0NzEwMDQxNDAzNDIy.XlPa4w.kYi8eLzMUygyWABTw0oWBS2ipQU';
 client.on("ready", ()=>
 {
   console.log("ready");
-  let channel = client.channels.get("チャンネルid");
+  let channel = client.channels.get("681504997229461549");
   setInterval(()=>
   {
     channel.send("t!rps paper");
